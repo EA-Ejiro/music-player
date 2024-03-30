@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: beige;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 900px;
+}
+.music{
+    position: relative;
+    background-color: white;
+    width: 25rem;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.header .fas{
+    font-size: 1.6rem;
+}
+.fa-bars{
+    cursor: pointer;
+}
+
+.header h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+/* details  */
+.details{
+    margin: 2rem 0;
+    text-align: center;
+}
+.details img{
+    width: 70%;
+    border: 3px solid var(--color-sec);
+    margin-bottom: 1rem;
+}
+.details .artist{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: blue;
+}
+/* controls  */
+.controls{
+    background: gray;
+    padding: 2rem 1rem;
+    border-radius: 5rem 5rem 0 0;
+}
+.song-timer{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+/* range  */
+input[type="range"] {
+    appearance: none;
+    width: 50%;
+    outline: none;
+    height: 2px;
+    margin: 0 10px;
+}
+input[type="range"] ::-webkit-slider-thumb{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.duration input[type="range"]{
+    width: 80%;
+}
+/* buttons  */
+.buttons{
+    text-align: center;
+    margin: 2rem auto;
+    width: 60%;
+    padding: 5px 0;
+    background: whitesmoke;
+    border-radius: 5px;
+}
+.buttons > * {
+    border: none;
+    outline: none;
+    background: white;
+    padding: 1rem;
+    cursor: pointer;
+    color: grey;
+}
+.play{
+    background: blue;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    color: white;
+}
+.Play-all{
+    display: block;
+    margin: 0 auto;
+    padding: 3px;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+/* volume  */
+.volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+}
+.volume p{
+    background: blue;
+    color: white;
+    font-size: 1.4rem;
+    height: 2rem;
+    padding: 0 3px;
+    margin: 8px;
+}
+.volume i{
+    background: gray;
+    color: white;
+    font-size: 1.2rem;
+    height: 2rem;
+    padding: 0 3px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+.volume input[type="range"]{
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* music playlist  */
+.music-playlist{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100% );
+    transition: all 0.5s; 
+}
+.playlist-header{
+    color: black;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.playlist-header .fa-times{
+    cursor: pointer;
+}
+.playlist-div{
+    width: 100%;
+    height: 80vh;
+    overflow-y: auto;
+}
+.playlist {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.song-index{
+    font-size: 1.4rem;
+    margin-right: 5px;
+}
+.playlist p{
+    width: 90%;
+    font-size: 1.4rem;
+    border-bottom: 1px solid gray;
+    padding: 5px 0;
+    cursor: pointer;
+
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a3597ae1e3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Listen player</title>
+</head>
+<body>
+    <section class="main">
+        <div class="container box">
+            <div class="music">
+                <!-- music player -->
+                <div class="music-player">
+                    <!-- header -->
+                    <div class="header">
+                        <i class="fas fa-music"></i>
+                        <h2>Now Playing</h2>
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <!-- song-details -->
+                    <div class="details">
+                        <img class="track-image" src="picture perfect.jpg" alt="">
+                        <p class="title">Song Title</p>
+                        <p class="artist">Artist name</p>
+                    </div>
+                    <!-- player control -->
+                    <div class="controls"> 
+                        <div class="song-timer">
+                            <span class="current-time">00:12</span>
+                            <span class="duration-time">04:10</span>
+                        </div>
+                        <!-- music duration -->
+                        <div class="duration">
+                            <input
+                            type="range" 
+                            class="duration-slider"
+                            min="0"
+                            max="100"
+                            value="0">
+                        </div>
+                        <!-- buttons - play, next and prev  -->
+                        <div class="buttons">
+                            <button class="prev">
+                                <i class="fas fa-step-backward"></i>
+                            </button>
+                            <button class="play">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <button class="next">
+                                <i class="fas fa-step-forward"></i>
+                            </button>
+                        </div>
+                        <!-- autoplay -->
+                        <button class="Play-all">
+                            Play All  <i class="fas fa-sync-alt">
+                            </i>
+                        </button>
+                        <!-- volume  -->
+                        <div class="volume">
+                            <p id="show-volume">50</p>
+                            <i class="fas fa-volume-mute" 
+                            id="volume-icon" ></i>
+                            <input
+                            type="range" 
+                            id="volume"
+                            min="0"
+                            max="100"
+                            value="50">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- music playlist -->
+                <div class="music-playlist">
+                    <!-- header -->
+                    <div class="header playlist-header">
+                        <i class="fas fa-music"></i>
+                        <h2>playlist</h2>
+                        <i class="fas fa-times"></i>
+                    </div> 
+                    <!-- playlist items  -->
+                    <div class="playlist-div">
+                        <div class="playlist">
+                            <span class="song-index">1</span>
+                            <p class="single-song">song one</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <script src="music.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
+
